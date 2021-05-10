@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .container {
+                height: 100px;
+                position: relative;
+                }
+            .vertical-center {
+                position: relative;
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+            .button {
+                background-color: #202220;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body >
+        <div class="container">
+            <div class="vertical-center" style="top: 50%;left: 25%;">
+            <button onclick="document.location='today'" 
+            style="width: 50%;height: 50%;"
+            class="button"
+            >
+            ดูรายงานสถิติ Covid-19 ประจำวัน</button>
+        </div>
+
+        </div>
+    </br>
+    </br>
+        <div class="container">
+            <div class="vertical-center" style=" background-color: #202220;width: 20%;height: 50px;left: 40%;">
+                <p style="left: 44%;color: white;text-align: center;padding-top: 15px;">
+                    เลือกวันที่เพื่อดูรายงาน</p>
+            </div>
+            <form method="POST" style="top: 50%;" >
+                <div class="vertical-center" style="left: 46%;">
+                    <input type="date" id="selectedDate" name="selectedDate">
+                </div>
+            </br></br>
+            <div class="vertical-center" style="left: 46.5%;">
+                <button type="submit" class="button">ดูรายงาน</button>
+            </div>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Timeline</title>
+    <style>
+      .container {
+                height: 100px;
+                min-width: 40%;
+                position: relative;
+                left: 30%;
+                margin-top: 10px;
+                }           
+      
+    </style>
+  </head>
+    <body>
+      <div>
+        <div class="container" style="background-color:#3f32af; border-radius: 25px; display:inline-block">
+          <p style="text-align: center; color: white;font-size: 18px; padding: 35px 32px;text-decoration: none; margin: 4px 2px;">
+            รายงานสถิติ Covid-19 ประจำวันที่ {{Date}}
+          </p>
+        </div>
+
+      </br>
+        
+        <div class="container" style="background-color:#e41919; border-radius: 25px; display:inline-block">
+          <p style="text-align: center; color: white;font-size: 18px; padding: 15px 32px;text-decoration: none; margin: 4px 2px;">
+            ติดเชื้อสะสม</br>{{data.Confirmed}}</br>(+{{data.NewConfirmed}})
+          </p>
+        </div>
+
+      </br>
+        
+        <div class="container" style="background-color:#0b8325; border-radius: 25px; display:inline-block">
+          <p style="text-align: center; color: white;font-size: 18px; padding: 15px 32px;text-decoration: none; margin: 4px 2px;">
+            รักษาหายแล้ว</br>{{data.Recovered}}</br>(+{{data.NewRecovered}})
+          </p>
+        </div>
+
+      </br>
+        
+        <div class="container" style="background-color:#202220; border-radius: 25px; display:inline-block">
+          <p style="text-align: center; color: white;font-size: 18px; padding: 15px 32px;text-decoration: none; margin: 4px 2px;">
+            เสียชีวิต</br>{{data.Deaths}}</br>(+{{data.NewDeaths}})
+          </p>
+        </div>
+    </div>
+  </br>
+      <div style="
+      position: relative;
+      min-width: 20%;
+      left:46.5%;
+      margin-top: 10px;
+      ">
+        <button onclick="document.location='/'" style="background-color:#9b2121;  border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;">ย้อนกลับ</button>
+      </div>
+      
+      </body>
+ </html>
